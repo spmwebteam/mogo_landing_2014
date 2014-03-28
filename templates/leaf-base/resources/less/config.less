@@ -39,6 +39,7 @@ Style Guide 0.1.0
 @mq-widescreen-width:		1240;
 
 // Typographic Scale
+@great-text-size: 			48;
 @canon-text-size: 			32;
 @paragon-text-size: 		24;
 @primer-text-size: 			18;
@@ -53,26 +54,28 @@ Style Guide 0.1.0
 // Base Colors
 @white: 					#fff;
 @black: 					#000;
-@grey: 						#999;
-@light-grey: 				lighten(@grey, 25%);
-@dark-grey: 				darken(@grey, 25%);
-@blue: 						#3399FF;
-@light-blue: 				lighten(@blue, 15%);
+@grey: 						#97999c;
+@light-grey: 				#e8e8e8;
+@dark-grey: 				#464748;
+@blue: 						#1260ae;
+@green:						#00993f;
+@red:						#af0823;
+@light-blue: 				#1b75d1;
 @dark-blue: 				darken(@blue, 15%);
 
 // Client Specific Colors
 @primary-color: 			@blue;
 @client-color-1: 			@primary-color;
-@client-color-2: 			@light-blue;
-@client-color-3: 			@dark-blue;
-@client-color-4: 			@grey;
+@client-color-2: 			@red;
+@client-color-3: 			@green;
+@client-color-4: 			@light-blue;
 @client-color-5: 			@light-grey;
 @client-color-6: 			@dark-grey;
 
 
 // Text Colors
-@primary-text-color: 		@light-grey;
-@secondary-text-color: 		@dark-grey;
+@primary-text-color: 		@dark-grey;
+@secondary-text-color: 		@grey;
 @inverse-text-color: 		@white;
 @button-text-color: 		@inverse-text-color;
 
@@ -86,21 +89,20 @@ Style Guide 0.1.0
 @tertiary-heading-color: 	@dark-blue;
 
 // Font Declarations
-@museo-slab-700:			"Museo Slab 700", Helvetica, Arial, Verdana, serif;
-@source-sans-regular:		"Source Sans Pro", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
-@source-sans-bold:			"Source Sans Pro Bold", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
-@source-sans-italic:		"Source Sans Pro Italic", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
-@source-sans-bold-italic:	"Source Sans Pro Bold Italic", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
-// @symbolset:					"Symbolset";
-@primary-font-family: 		@source-sans-regular;
+@lato:						'Lato', Arial, sans-serif;
 
-@text-font:					@source-sans-regular;
-@text-font-bold:			@source-sans-bold;
-@text-font-italic:			@source-sans-italic;
-@text-font-bold-italic:		@source-sans-bold-italic;
-// @text-font-icons:			@symbolset;
-@primary-heading-font:		@museo-slab-700;
-@secondary-heading-font:		@primary-heading-font;
+@primary-font-family: 		@lato;
+
+@primary-heading-font:		@lato;
+@secondary-heading-font:	@primary-heading-font;
+
+// Font Weights
+
+@thin-weight:				300;
+@normal-weight:				400;
+@semibold-weight:			700;
+@bold-weight:				900;
+
 
 // Form Variables
 @field-focus-color:			@blue;

@@ -15,6 +15,11 @@ Markup Examples:
 
 */
 
+// Great Text
+.great-text {
+	.size-for-font(@great-text-size);
+}
+
 // Canon Text
 .canon-text {
 	.size-for-font(@canon-text-size);
@@ -163,5 +168,53 @@ Paragraph Defaults
 
 p {
 	line-height: 1.5em;
+}
+
+/*
+Font Weights
+*/
+
+.thin {
+	font-weight: @semibold-weight;
+}
+
+.semibold {
+	font-weight: @semibold-weight;
+}
+
+.bold {
+	font-weight: @bold-weight;
+}
+
+/*
+Font Styles 
+*/
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.drop-caps {
+	text-transform: capitalize;
+
+	&:first-letter {
+		font-size: 1.25em;
+	}
+}
+
+/*
+Font Colors
+*/
+
+.primary-color {
+	color: @primary-text-color;
+}
+
+.secondary-color {
+	color: @secondary-text-color;
 }
 

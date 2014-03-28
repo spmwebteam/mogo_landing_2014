@@ -12,12 +12,22 @@
 
 	</header>
 
-	<main role="main">
-		<div class="wrapper">
-			
-			<h1 class="primary-heading paragon-text">Home</h1>
+	<main class="sticky-compensation" role="main">
+		
+		<section class="mogo-experience">
+			<div class="mogo-experience--container">
+				<img class="mogo-experience__logo" src="images/logo-mogo-experience.png" alt="mogo-experience">					
+			</div>
+		</section>
 
-		</div>
+		<section class="mogo-makeover">
+			<div class="wrapper align-center">
+				<img src="images/logo-mogobox.png">
+				<p class="mtxs uppercase secondary-color great-text">Is Going Through A</p>
+			</div>
+		</section>
+
+
 	</main>
 
 	<footer>
