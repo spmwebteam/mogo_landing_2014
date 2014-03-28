@@ -518,6 +518,7 @@ html,
 body {
   font-size: 100%;
   font-family: 'Lato', Arial, sans-serif;
+  color: #464748;
 }
 /*
 
@@ -531,7 +532,7 @@ p {
 Font Weights
 */
 .thin {
-  font-weight: 700;
+  font-weight: 300;
 }
 .semibold {
   font-weight: 700;
@@ -562,6 +563,9 @@ Font Colors
 }
 .secondary-color {
   color: #97999c;
+}
+.white {
+  color: #ffffff;
 }
 .button {
   width: auto;
@@ -1226,6 +1230,20 @@ Padding Horizontal (Left & Right)
 }
 .mogo-makeover {
   margin-top: 12.5em;
+}
+[class*='stretch-bg'] {
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.stretch-bg--mogo-crew {
+  background: url("/templates/leaf-base/resources/images/img-mogo-crew.jpg");
+  background-size: cover;
+  padding-bottom: 10em;
+}
+.border-divider {
+  -webkit-box-shadow: inset 0px 7px 14px rgba(0, 0, 0, 0.1), inset 0px -7px 14px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 7px 14px rgba(0, 0, 0, 0.1), inset 0px -7px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 7px 14px rgba(0, 0, 0, 0.1), inset 0px -7px 14px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 47.9375em) {
   /*

@@ -80,3 +80,29 @@
 
 	margin-top:@200px;
 }
+
+// Strech BG
+
+[class*='stretch-bg'] {
+	background-repeat: no-repeat;	
+	background-position:center center;
+}
+
+
+.stretch-bg {	
+
+	&--mogo-crew {
+		background:url("@{base-path-images}img-mogo-crew.jpg");
+		background-size: cover;
+		padding-bottom:10em;
+	}
+
+}
+
+// Div Shadow
+
+.border-divider {
+	-webkit-box-shadow: inset 0px 7px 14px rgba(0, 0, 0, 0.1), inset 0px -7px 14px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0px 7px 14px rgba(0, 0, 0, 0.1), inset 0px -7px 14px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0px 7px 14px rgba(0, 0, 0, 0.1), inset 0px -7px 14px rgba(0, 0, 0, 0.1);
+}
