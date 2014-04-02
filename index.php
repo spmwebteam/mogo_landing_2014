@@ -72,7 +72,7 @@
 
 								<p class="primer-text thin">Now there is a better way and it is so simple.</p>  
 								
-								<ol class="primer-text thin">
+								<ol class="numbered-list primer-text thin">
 									<li>Submit your idea or request online.</li>
 									<li>Mogo Nation will vote and comment on it.</li>
 									<li>When the product has a large enough following you will get it on Mogobox.</li>

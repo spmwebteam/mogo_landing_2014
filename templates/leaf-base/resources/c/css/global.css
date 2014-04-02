@@ -1189,6 +1189,29 @@ Padding Horizontal (Left & Right)
 .inner-content {
   padding: 5em 0;
 }
+.numbered-list {
+  counter-reset: item;
+}
+.numbered-list li {
+  position: relative;
+  display: block;
+  line-height: 2em;
+}
+.numbered-list li:before {
+  content: counter(item) " ";
+  counter-increment: item;
+  position: absolute;
+  top: 0.3125em;
+  left: 0;
+  margin-left: -2.1875em;
+  text-indent: 0.4375em;
+  width: 1.5625em;
+  height: 2.1875em;
+  color: #ffffff;
+  background: #1260ae;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
 .sticky-header {
   width: 100%;
   position: fixed;
