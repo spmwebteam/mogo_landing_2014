@@ -15,6 +15,12 @@
 	margin-right: auto;
 }
 
+.inner-content {
+	// Variables
+	@80px: (1em * (80 / @base-text-size));
+
+	padding:@80px 0;
+}
 
 // Sticky 
 
@@ -71,38 +77,322 @@
 	}
 }
 
-// Mogo Makeover
+// Mogo Learn
 
-.mogo-makeover {
+.mogo-learn {
 
 	// Variables
-	@200px: (1em * (200 / @base-text-size));
+	@25px:	(1em * (25 / @base-text-size));
+	@75px:	(1em * (75 / @base-text-size));
+	@190px:	(1em * (190 / @base-text-size));
 
-	margin-top:@200px;
-}
-
-// Strech BG
-
-[class*='stretch-bg'] {
-	background-repeat: no-repeat;	
-	background-position:center center;
-}
-
-
-.stretch-bg {	
-
-	&--mogo-crew {
-		background:url("@{base-path-images}img-mogo-crew.jpg");
+	&--background {
+		background:url("http://placehold.it/1000x460") no-repeat;
 		background-size: cover;
-		padding-bottom:10em;
+		padding: @25px;	
+		height:460px;
+	}
+
+	&__icon {
+		width:140px;
+		height:150px;
+		display:block;
+		position:absolute;
+		top:-@75px;
+		left:@190px;
+
+		&.answer {
+			.global-sprite(3,1);
+		}
+
+		&.peek {
+			.global-sprite(0,1);
+		}
+	}
+}
+
+// Mogo Sections
+
+.mogo {	
+	@200px:	(1em * (200 / @base-text-size));
+
+	&-makeover {
+		margin-top:@200px;
+	}
+
+	&-nation {
+		.inset-double-box-shadow(20,30,10,fade(@grey,30%));
+	}
+}
+
+
+// Tabbed Styles
+
+.js {
+	.tabs {
+		.tab {
+			max-height: 0;
+			position: relative;
+			overflow: hidden;
+
+			&.is-current {
+				max-height: 999em;
+			}
+		}
+	}
+}
+
+// Tabbed Navigation
+.tabbed-nav--headline {
+	// Variables
+	@30px: 1em * (30 / @base-text-size);
+
+	background: @dark-grey;
+	padding: @30px 0;
+	border-bottom:solid 2px @light-grey;
+}
+
+.tabbed-nav--container {
+	background-color: @light-grey;
+	border-top: 2px solid @light-grey;
+}
+
+.tabbed-nav--interior {
+	width: 100%;
+	display: table;
+}
+
+.tabbed-nav--row {
+	display: table-row;
+	background: @dark-grey;
+}
+
+.tabbed-nav--item {
+	// Variables
+	@20px: 1em * (20 / @base-text-size);
+
+	// Structure
+	display: table-cell;
+
+	// Pretty
+	color: @white;
+	border-left: 2px solid @light-grey;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	.size-for-font(@primer-text-size);
+
+	&:first-child {
+		border:0;
+	}
+
+
+	.tabbed-nav--label {
+		padding-top: @20px;
+		padding-bottom: @20px;
+		position: relative;
+	}
+
+
+	// Tabbed Color Styles
+
+	&.mogosocial {
+
+		&:hover,
+		&:focus,
+		&.is-current {
+			background-color: @client-color-1;		
+		}
+	}
+
+	&.mogoblog {
+
+		&:hover,
+		&:focus,
+		&.is-current {
+			background-color: @client-color-2;		
+		}
+	}
+
+	&.mogonation {
+
+		&:hover,
+		&:focus,
+		&.is-current {
+			background-color: @client-color-3;		
+		}
+	}
+
+
+	&.mogobox {
+
+		&:hover,
+		&:focus,
+		&.is-current {
+			background-color: @client-color-4;		
+		}
+	}
+}
+
+.tabbed-nav--heading {
+	color: @grey;
+	margin-top:0;
+	text-transform:uppercase;
+	font-weight: @normal-weight;
+
+	span {
+		font-weight:@bold-weight;
+	}
+
+	&.mogosocial span {
+		color: @client-color-1;
+	}
+
+	&.mogoblog span {
+		color: @client-color-2;
+	}
+
+	&.mogonation span {
+		color: @client-color-3;
+	}
+
+	&.mogobox span {
+		color: @client-color-4;
+	}
+}
+
+// Social Share
+
+.social-share {
+	// Variables
+	@twitter-color: 	#4099FF;
+	@facebook-color: 	#3b5998;
+	@pinterest-color: 	#c92228;
+
+	@5px: 				1em * (5 / @base-text-size);
+	@15px: 				1em * (15 / @base-text-size);
+	@60px: 				1em * (60 / @base-text-size);
+
+	&--container {
+		padding: @15px;
+		margin: @60px 0 @15px 0;
+		color: @white;
+		text-decoration: none;
+		display:block;
+
+		// Mixins
+		.border-radius(@5px);
+
+		&.twitter {
+			background:@twitter-color;
+
+			&:hover,
+			&:focus {
+				background:darken(@twitter-color, 5%);
+			}
+		}
+
+		&.facebook {
+			background:@facebook-color;
+
+			&:hover,
+			&:focus {
+				background:darken(@facebook-color, 5%);
+			}
+		}
+
+		&.pinterest {
+			background:@pinterest-color;
+
+			&:hover,
+			&:focus {
+				background:darken(@pinterest-color, 5%);
+			}
+		}
+	}
+
+	&__icon {
+		position:relative;
+		display:inline-block;
+		float:left;
+		width:40px;
+		height:30px;
+		margin-right: @15px;
+
+		&:after {
+			content:"";
+			position:absolute;
+			top:0;
+			right:0;
+			width:1px;
+			height:100%;
+			background: fade(@white, 50%);
+		}
+	
+
+		&.facebook {
+			.global-sprite(0,0);
+		}
+		&.twitter {
+			.global-sprite(1,0);
+		}
+		&.pinterest {
+			.global-sprite(2,0);
+		}
+	}
+}
+
+
+// Mogo Submit Form
+
+.mogo-submit--form {	
+	// Variables
+	@10px: 			1em * (10 / @base-text-size);
+	@135px: 		1em * (135 / @base-text-size);
+
+	.form-input {
+		background: @light-grey;
+		border:0;
+		margin-bottom: @10px;
+		padding: @10px;
+		width:100%;
+		font-family: @primary-font-family;
+
+		// Mixins
+		.placeholder();
+
+		&:focus {
+			outline:none;
+			background:darken(@light-grey, 10%);
+		}
+
+		&.message {
+			height: @135px;
+			text-align:left;
+		}
+
 	}
 
 }
 
-// Div Shadow
 
-.border-divider {
-	-webkit-box-shadow: inset 0px 7px 14px rgba(0, 0, 0, 0.1), inset 0px -7px 14px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: inset 0px 7px 14px rgba(0, 0, 0, 0.1), inset 0px -7px 14px rgba(0, 0, 0, 0.1);
-	box-shadow: inset 0px 7px 14px rgba(0, 0, 0, 0.1), inset 0px -7px 14px rgba(0, 0, 0, 0.1);
+// Footer
+
+.mogo-footer {
+
+	&--top {
+		.inset-box-shadow(20,20,20,@grey);
+	}
+
+	&--bottom {
+		background: @dark-grey;
+		color: @grey;
+
+			a {
+				color:@light-grey;
+				text-decoration: none;
+			}
+	}
 }

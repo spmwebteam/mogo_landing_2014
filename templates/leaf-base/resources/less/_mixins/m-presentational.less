@@ -125,3 +125,10 @@
 
     @{type}-@{property}: @spacing-value;
 }
+
+// Image Sprite
+
+.global-sprite(@x,@y) {
+    background-image:url("@{base-path-images}global-sprite.png");
+    background-position: -(@x*@sprite-grid) -(@y*@sprite-grid);
+}

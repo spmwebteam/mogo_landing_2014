@@ -1,0 +1,52 @@
+.text-shadow(@h,@v,@blur,@color) {
+	@h-shadow:				1px * @h;
+	@v-shadow:				1px * @v;
+	@blur-shadow:			1px * @blur;
+
+	@text-shadow-string:	@h-shadow @v-shadow @blur-shadow @color;
+
+	-webkit-text-shadow:	@text-shadow-string;
+	   -moz-text-shadow:	@text-shadow-string;
+	    -ms-text-shadow:	@text-shadow-string;
+	        text-shadow:	@text-shadow-string;
+}
+
+.box-shadow(@h,@v,@blur, @color) {
+	@h-shadow:				1px * @h;
+	@v-shadow:				1px * @v;
+	@blur-shadow:			1px * @blur;
+
+	@box-shadow-string:	@h-shadow @v-shadow @blur-shadow @color;
+
+	-webkit-box-shadow:	@box-shadow-string;
+	   -moz-box-shadow:	@box-shadow-string;
+	    -ms-box-shadow:	@box-shadow-string;
+	        box-shadow:	@box-shadow-string;
+}
+
+.inset-box-shadow(@h,@v,@blur, @color) {
+	@h-shadow:				1px * @h;
+	@v-shadow:				1px * @v;
+	@blur-shadow:			1px * @blur;
+
+	@box-shadow-string:	inset 0 @h-shadow @v-shadow (-1px * @blur-shadow) @color;
+
+	-webkit-box-shadow:	@box-shadow-string;
+	   -moz-box-shadow:	@box-shadow-string;
+	    -ms-box-shadow:	@box-shadow-string;
+	        box-shadow:	@box-shadow-string;
+}
+
+.inset-double-box-shadow(@h,@v,@blur, @color) {
+	@h-shadow:				1px * @h;
+	@v-shadow:				1px * @v;
+	@blur-shadow:			1px * @blur;
+
+	@box-shadow-string-1:	inset 0 @h-shadow @v-shadow (-1px * @blur-shadow) @color;
+	@box-shadow-string-2:	inset 0 (-1px * @h-shadow) @v-shadow (-1px * @blur-shadow) @color;
+
+	-webkit-box-shadow:	@box-shadow-string-1, @box-shadow-string-2;
+	   -moz-box-shadow:	@box-shadow-string-1, @box-shadow-string-2;
+	    -ms-box-shadow:	@box-shadow-string-1, @box-shadow-string-2;
+	        box-shadow:	@box-shadow-string-1, @box-shadow-string-2;
+}
