@@ -1299,6 +1299,8 @@ Padding Horizontal (Left & Right)
   padding-top: 1.25em;
   padding-bottom: 1.25em;
   position: relative;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 .tabbed-nav--item.mogosocial:hover,
 .tabbed-nav--item.mogosocial:focus,
