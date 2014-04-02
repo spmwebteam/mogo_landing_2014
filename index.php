@@ -23,7 +23,7 @@
 				<h3 class="uppercase great-text">Here is What's Taking Place</h3>
 				<p class="paragon-text thin secondary-color">The ownership of Mogo has hired a new executive marketing director.  In hiring this new director, an updated vision and new passion is being brought to Mogo.</p>
 
-				<p class="paragon-text semibold mbl">To create the new vision that Mogo has we have temporarily pulled the account down to rebrand and structure the site to give a premier look, feel, and experience to the Mogo Nation.</p>
+				<p class="paragon-text semibold">To create the new vision that Mogo has we have temporarily pulled the account down to rebrand and structure the site to give a premier look, feel, and experience to the Mogo Nation.</p>
 
 				<p class="paragon-text semibold mbl">In July 2014, MogoBox will have a launch – offering some of the best products you will ever see or find, along with a new Steal or Deal every month.</p>
 			</div>
