@@ -187,20 +187,21 @@
 						<p class="primer-text secondary-color">Fill out this form and we will contact you about offering your product on MogoBox.</p>
 					</div>
 				</div>
-				<form class="mogo-submit--form" method="POST" action="">
+				<form class="mogo-submit--form" method="POST" action="/contact/engine.php">
 					<div class="gd-row pvm">
 				
 						<div class="gd-half gd-columns">
-							<input class="form-input" type="text" name="name" placeholder="NAME">
-							<input class="form-input" type="email" name="email" placeholder="EMAIL">
-							<input class="form-input" type="url" name="website" placeholder="WEBSITE">
+							<input class="form-input" type="text" name="Name" id="Name" placeholder="NAME" required>
+							<input class="form-input" type="email" name="Email" id="Email" placeholder="EMAIL" required>
+							<input class="form-input" type="text" name="Website" id="Website" placeholder="WEBSITE">
+							<input type="hidden" name="loadtime" value="<?php echo time(); ?>">
 						</div>
 						<div class="gd-half gd-columns">
-							<textarea class="form-input message" name="message" placeholder="TELL US ABOUT YOUR PRODUCT"></textarea>
+							<textarea class="form-input message" name="Message" id="Message" placeholder="TELL US ABOUT YOUR PRODUCT" required></textarea>
 						</div>
 						
 					</div>
-					<input class="button primary large gd-full mtn" type="submit" value="Help Me Sell My Product!">
+					<input class="button primary large gd-full mtn" type="submit" id="message" value="Help Me Sell My Product!">
 				</form>
 				
 			</div>
@@ -217,16 +218,16 @@
 						<div class="relative pvl phm align-center">
 							<div class="mogo-learn__icon answer">&nbsp;</div>
 							<h3 class="canon-text">Need an Item Fast?</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ultricies pulvinar. Nam ornare iaculis sem, vel luctus eros cursus blandit. Vestibulum quis rhoncus sem, sit amet cursus mauris.</p>
-							<a class="button secondary large gd-full" href="tel:+18006646269">1-800-MOGOBOX</a>
+							<p>We know many of our customers want to enjoy their new products sooner than later. That's why we offer fast shipping to you! Contact us today to expedite your shipment!</p>
+							<a class="button secondary large gd-full mbl" href="tel:+12282557110">1-228-255-7110</a>
 						</div>
 					</div>
 					<div class="gd-half gd-columns">
 						<div class="relative pvl phm align-center">						
 							<div class="mogo-learn__icon peek">&nbsp;</div>
 							<h3 class="canon-text">Request A Sneak Peek!</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ultricies pulvinar. Nam ornare iaculis sem, vel luctus eros cursus blandit. Vestibulum quis rhoncus sem, sit amet cursus mauris.</p>
-							<a class="button secondary large gd-full" href="mailto:info@mogobox.com">Tell Me More Now!</a>
+							<p>New products are just around the corner! Out with the old, and in with the new! Request a sneak peak of our latest items scheduled for sale soon by clicking the button below!</p>
+							<a class="button secondary large gd-full mbl" href="mailto:CustomerService@Mogobox.com">Tell Me More Now!</a>
 						</div>
 					</div>
 				</div>
